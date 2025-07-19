@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors - Console</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>body { background-color: rgb(51, 51, 51); color: white;
-    font-family: sans-serif; padding: 20px;}
-  </style>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="wrapper">
+    <div><h1>Rock Paper Scissors</h1></div>
+    <div id="playButtons">
+      <button id="rock" type="button"><img src="./images/rock.png" alt="rock" title="Rock"></button>
+      <button id="paper" type="button"><img src="./images/paper.png" alt="paper" title="Paper"></button>
+      <button id="scissors" type="button"><img src="./images/scissors.png" alt="scissors" title="Scissors"></button>
+    </div>
+    <div id="infoWrap">
+      <div id="infoContent"><p id="infoMain">Make a Choice!</p></div>
+      <div id="playerContent">
+        <div id="infoHuman">Your Score: 0</div>
+        <div id="infoComp">Computer Score: 0</div>
+      </div>
+      <div id="choices">
+        <div id="pChoice"></div>
+        <div id="cChoice"></div>
+      </div>
+    </div>
+  </div>
 <script src="./rps.js"></script>
 </body>
 </html>
